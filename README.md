@@ -38,7 +38,7 @@ Endpoints para la administración de aeropuertos.
 - **Ver todos los aeropuertos** (`GET /`): Devuelve una lista de todos los aeropuertos registrados.
 - **Buscar un aeropuerto** (`GET /{id}`): Obtiene los detalles de un aeropuerto específico mediante su ID.
 - **Conteo de vuelos** (`GET /{id}/flights/count`): Devuelve el número de vuelos asociados a un aeropuerto específico.
-- **Registrar aeropuerto** (`POST /`): Agrega un nuevo aeropuerto a la base de datos.
+- **Registrar aeropuerto** (`POST /`): Añade un nuevo aeropuerto a la base de datos.
 - **Actualizar datos** (`PUT /{id}`): Actualiza la información de un aeropuerto existente.
 - **Eliminar aeropuerto** (`DELETE /{id}`): Elimina un aeropuerto del sistema.
 
@@ -74,7 +74,7 @@ Endpoints para la gestión de posibles servicios adicionales de vuelo.
 - **Catálogo de servicios** (`GET /`): Devuelve una lista de todos los servicios disponibles.
 - **Detalle de servicio** (`GET /{id}`): Obtiene la información de un servicio específico.
 - **Servicios por vuelo** (`GET /by-flight/{flightId}`): Devuelve los servicios ofrecidos en un vuelo específico.
-- **Crear servicio** (`POST /`): Agrega un nuevo servicio al catálogo.
+- **Crear servicio** (`POST /`): Añade un nuevo servicio al catálogo.
 - **Actualizar servicio** (`PUT /{id}`): Modifica los detalles de un servicio existente.
 - **Eliminar servicio** (`DELETE /{id}`): Elimina un servicio del sistema.
 
@@ -106,7 +106,7 @@ docker compose version
 ```
 
 ## Configurar variables de entorno (.env)
-El proyecto utiliza un archivo `.env` para configurar valores importantes como:
+El proyecto utiliza un archivo `.env` para configurar valores importantes/privadas/personales como:
 
 - Credenciales de base de datos
 - Puertos expuestos
@@ -129,6 +129,7 @@ SPRING_DATASOURCE_USERNAME=root
 SPRING_DATASOURCE_PASSWORD=1234
 APP_PORT=8080
 ```
+
 ## Cómo iniciar el proyecto
 
 Para levantar todos los servicios:
